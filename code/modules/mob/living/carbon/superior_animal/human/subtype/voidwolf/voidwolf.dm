@@ -107,6 +107,32 @@
 	..()
 	reload_message = "[name] ejects a depleted cell and rapidly reloads a new one!"
 
+	/mob/living/carbon/superior_animal/human/voidwolf/zerosuit
+	name = "Void Wolf XM-07 Pilot"
+	desc = "A Void Wolf mercenary, devoid of their combat mech. They wield an SMG."
+	icon_state = "voidwolf_zerosuit"
+	icon_dead = "voidwolf_zerosuit_dead"
+	melee_damage_lower = 10
+	melee_damage_upper = 15
+	maxHealth = 150
+	health = 150
+	ranged = TRUE
+	rapid = TRUE
+	projectiletype = /obj/item/projectile/bullet
+	projectilesound = 'sound/weapons/Gunshot_light.ogg'
+	drop_items = list(/obj/item/tool/weldingtool/advanced, /obj/item/gun/projectile/automatic/greasegun) 
+	limited_ammo = TRUE
+	mag_drop = TRUE
+	rounds_left = 32
+	mag_type = /obj/item/ammo_magazine/smg_35/empty
+	mags_left = 2
+
+	armor = list(melee = 10, bullet = 20, energy = 20, bomb = 0, bio = 100, rad = 50)
+
+/mob/living/carbon/superior_animal/human/voidwolf/zerosuit/New()
+	..()
+	reload_message = "[name] rapidly reloads before the empty mag hits the ground!"
+
 /mob/living/carbon/superior_animal/human/voidwolf/fieldtech/ranged
 	name = "Void Wolf Field Tech"
 	desc = "A Void Wolf mercenary wielding an industrial welder and energy pistol."

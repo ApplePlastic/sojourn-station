@@ -83,7 +83,7 @@
 	projectile = /obj/item/projectile/beam/stun
 	fire_sound = 'sound/weapons/Taser.ogg'
 
-/obj/item/mecha_parts/mecha_equipment/ranged_weapon/energy/hydrogen
+/*/obj/item/mecha_parts/mecha_equipment/ranged_weapon/energy/hydrogen
 	name = "\improper Mech-mounted Hydrogen-Plasma Cannon"
 	desc = "A Sollex-Pattern hydrogen-plasma cannon, modified to fit on combat exosuits. Unlike its hand-held counter-part, this one doesn't need cooling, as it use the Exosuit's systems for that purpose."
 	icon_state = "hydrogen_cannon"
@@ -93,8 +93,9 @@
 	projectile = /obj/item/projectile/hydrogen/cannon/max
 	fire_sound = 'sound/weapons/lasercannonfire.ogg'
 	price_tag = 1300 //state of the art
+//Commenting this out until it gets fixed. Exploitable weapons are cringe. 
 
-/* Commenting this out rather than removing it because it may be useful for reference.
+//Commenting this out rather than removing it because it may be useful for reference.
 /obj/item/mecha_parts/mecha_equipment/ranged_weapon/honker
 	name = "\improper HoNkER BlAsT 5000"
 	icon_state = "mecha_honker"
